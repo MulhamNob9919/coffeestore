@@ -1,0 +1,44 @@
+
+
+body { background-color: lightgray; color: black; font-family: Georgia, serif; margin: 0px; padding: 0px;}
+
+.indexmain { font-family: Georgia, serif; padding: 35px; margin: 10%; height: 100%; background-color: whitesmoke; border: solid 1px #000; border-radius: 15px; box-shadow: 5px 5px; font-weight: normal; font-size: large;} 
+
+.lettermain { font-family: Georgia,Times,Times New Roman,serif; font-style: italic; font-size: small; padding: 30px; margin: 5%; height: 100%; background-color: #E7DDFF; border: solid 1px #000; border-radius: 15px; box-shadow: 5px 5px #9279BA; font-weight: normal;} 
+
+
+ul {
+  list-style-type: none;
+font-family: Georgia, serif;
+font-size: large; 
+  margin: 15px;
+font-weight: bold;
+border-radius: 15px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #black;
+}
+
+.active {
+  background-color: whitesmoke;
+  color: black;
+}
