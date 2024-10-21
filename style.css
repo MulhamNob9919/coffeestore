@@ -1,0 +1,164 @@
+
+
+body { background-color: lightgray; color: black; font-family: Georgia, serif; margin: 0px; padding: 0px;}
+
+.indexmain { font-family: Georgia, serif; padding: 35px; margin: 10%; height: 100%; background-color: whitesmoke; border: solid 1px #000; border-radius: 15px; box-shadow: 5px 5px; font-weight: normal; font-size: large;} 
+
+.GWSmain { font-family: Georgia, serif; padding: 35px; margin: 10%; height: 100%; background-color: transparent; border: solid 0px #000; border-radius: 15px; box-shadow: 0px 0px; font-weight: normal; font-size: large;} 
+
+.lettermain { font-family: Georgia,Times,Times New Roman,serif; font-style: italic; font-size: small; padding: 30px; margin: 5%; height: 100%; background-color: #E7DDFF; border: solid 1px #000; border-radius: 15px; box-shadow: 5px 5px #9279BA; font-weight: normal;} 
+
+
+ul {
+  list-style-type: none;
+font-family: Georgia, serif;
+font-size: large; 
+  margin: 15px;
+font-weight: bold;
+border-radius: 15px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+ /* position: -webkit-sticky; 
+  position: sticky;
+  top: 0; */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+li a:hover {
+  background-color: #111;
+    transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+.active {
+  background-color: whitesmoke;
+  color: black;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+.active:hover {
+  background-color: gray;
+  color: white;
+    transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 6px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;  
+    object-fit: cover;
+}
+
+img.four-grid-cells {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+}
+
+img.wide-image {
+    grid-column: span 2 / auto;
+}
+
+@media screen and (max-width: 768px) {
+   .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+/* changes the grid layout to a single column */
+    div.gallery {
+        grid-template-columns: 1fr;
+    }
+
+/* resets the grid placement properties for 
+the images spanning four grid cells */
+    img.four-grid-cells {
+        grid-row: auto;
+        grid-column: auto;
+    }
+
+/* resets the grid placement properties for 
+the images spanning two grid columns  */
+    img.wide-image {
+        grid-column: auto;
+    }
+
+
+/* these are navigation bar */
+
+ul {
+  list-style-type: none;
+font-family: Georgia, serif;
+font-size: large; 
+  margin: 10px;
+font-weight: bold;
+border-radius: 15px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+ /* position: -webkit-sticky; 
+  position: sticky;
+  top: 0; */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  font-size: medium;
+  text-decoration: none;
+    transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+
+li a:hover {
+  background-color: #111;
+    transition-delay: 0.2s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+
+
+
+}
